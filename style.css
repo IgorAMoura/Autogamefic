@@ -1,0 +1,328 @@
+@font-face
+{   font-family: "Protest Strike";
+    src: url(ProtestStrike-Regular.ttf);
+    font-family: "Roboto Flex"; 
+    src: url(fontes/RobotoFlex-Regular.ttf); }
+
+:root
+{   --azul_escuro:#001c55;
+    --azul: #008cea;
+    --amarelo: #f5d300;
+    --branco: #f4f2ed;
+    --preto: #070707; }
+
+*   
+{   margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+html
+{   scroll-behavior:smooth; }
+
+header
+{   background-color: var(--azul_escuro);
+    height: 150px; }
+
+.fundo-azul
+{   height: calc(100% - 200px);
+    width: 100%;
+    background: linear-gradient(90deg, rgba(168,146,0.99) 0%, rgba(0,95,158,0.99) 100%);
+    box-shadow: inset 0px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.fundo-azul img
+{   height: 100%;
+    width: 100%;
+    opacity: 50%; }
+
+.base-escura
+{   height: 50px;
+    width: 100%;
+    background-color: var(--azul_escuro); }
+
+.header
+{   height: 100vh; }
+
+.conteudo-header
+{   height: 150px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 6%; }
+
+.conteudo-header img
+{   height: 115px; }
+
+.tema, .config
+{   height: 35px;
+    width: 35px;
+    background-color: transparent;
+    border: none;
+    fill: var(--amarelo);
+    cursor: pointer; 
+    transition: fill 200ms; }
+
+.tema:hover, .config:hover
+{   fill: #008cea; }
+
+.tema
+{   margin-right: 40px;}
+
+
+.menu a
+{   margin: 0 35px;
+    font-family: "Protest Strike";
+    font-size: 26px;
+    color: var(--amarelo);
+    text-decoration: none;
+    transition: color 200ms ease;}
+
+.menu a:hover
+{   color: var(--azul); }
+
+.sobre
+{   background-color: var(--branco);
+    height: 85vh;
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+
+.divisa-sobre
+{   height: 10px;
+    width: 100%;
+    background: linear-gradient(90deg, #008cea 0%, #f5d300 100%);
+    box-shadow: inset 0px 3px 5px 0px rgba(0,0,0,0.75); }
+
+.titulo-sobre
+{   height: 15vh;
+    background-color: var(--azul_escuro);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.sobre
+{   box-shadow: inset 0px 10px 5px 0px rgba(0,0,0,0.75); }
+
+h2
+{   width: fit-content;
+    font-family: "Protest Strike";
+    font-size: 34px; 
+    color: var(--amarelo); 
+    letter-spacing: 1.5px; }
+
+.sobre p
+{   width: 820px;
+    margin: 30px 0 30px 10%;
+    font-family: "Roboto Flex";
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 40px; }
+
+.sobre img
+{   height: 85vh; }
+
+.titulo-cases
+{   height: 15vh;
+    background-color: var(--azul_escuro);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.container-cases
+{   height: 100vh; 
+    background-color: var(--branco); }
+
+.container-cards
+{   height: 85vh; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 6%; }
+
+.card
+{   display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+.card-img
+{   height: 460px;
+    width: 420px;
+    border-radius: 15px 15px 0 0;
+    background-color: var(--azul_escuro); }
+
+.faixa
+{   height: 10px;
+    width: 420px;
+    background-image: linear-gradient(90deg, #f5d300 0%, #008cea 100%); }
+
+.card-button
+{   height: 100px;
+    width: 420px;
+    border-radius: 0 0 15px 15px;
+    background-color: var(--azul_escuro);
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.card-button button
+{   height: 50px;
+    width: 50px;
+    fill: var(--amarelo);
+    background-color: transparent;
+    border: none; 
+    cursor: pointer;
+    transition: fill 200ms; }
+
+.card-button button:hover
+{   fill: var(--azul); }
+
+#portfolio
+{   height: 100vh;
+    background-color: var(--branco); 
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.fundo
+{   height: 680px;
+    width: 800px;
+    background-color: var(--azul_escuro);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+
+.enviar
+{   height: 45px;
+    width: 100px;
+    background-color: var(--amarelo);
+    margin-top: 35px;
+    font-family: "Protest Strike";
+    font-size: 18px;
+    color: var(--preto);
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: 200ms;}
+
+.enviar:hover
+{   background-color: var(--azul);}
+
+.fundo h2
+{   margin-top: 20px; }
+
+.fundo-branco
+{   height: 70%;
+    width: 80%;
+    background-color: var(--azul);
+    border-radius: 15px; 
+    margin-top: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    justify-content: space-evenly; }
+
+.detalhe
+{   width: 55px;
+    height: 40px;
+    background-color: var(--azul_escuro); }
+
+.detalhe-problema
+{   width: 55px;
+    height: 120px;
+    background-color: var(--azul_escuro); }
+
+.mini-faixa
+{   width: 5px;
+    height: 40px;
+    background: linear-gradient(180deg, rgba(245,211,0,1) 0%, rgba(0,140,234,1) 100%);
+    margin-left: 20px; }
+
+.mini-faixa-problema
+{   width: 5px;
+    height: 120px;
+    background: linear-gradient(180deg, rgba(245,211,0,1) 0%, rgba(0,140,234,1) 100%);
+    margin-left: 20px;}
+
+.fundo-branco input
+{   width: 545px;
+    height: 40px;
+    border: none;
+    border-radius: 15px 0 0 15px;
+    background-color: var(--branco);
+    padding-left: 10px; 
+    margin-top: 5px; }
+
+.fundo-branco .Nome, .Email, .Numero, .Problema
+{   width: 600px; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;}
+
+#problema
+{   width: 545px;
+    height: 120px;
+    border-radius: 15px 0 0 15px;
+    background-color: var(--branco);
+    border: none;
+    padding: 10px;
+    color: var(--preto);
+    outline: none; 
+    margin-top: 5px;
+    resize: none; }
+
+#problema:focus
+{   border: solid; }
+
+.fundo-branco input:focus
+{   border: solid; }
+
+label
+{   font-family: "Protest Strike";
+    font-size: 18px;
+    color: var(--preto); }
+
+textarea::placeholder, input::placeholder
+{   color: #07070780;
+    font-family: "Roboto Flex"; }
+
+input, textarea
+{   color: var(--preto);
+    font-family: "Roboto Flex"; }
+
+textarea
+{   text-wrap: wrap; }
+
+#footer
+{   height: 40vh;
+    background-color: var(--azul_escuro); }
+
+#footer h2
+{   margin-left: 10%;
+    margin-bottom: 10px; }
+
+.footer
+{   height: 100%;
+    padding-top: 30px; }
+
+.footer button
+{   height: 80px;
+    width: 80px;
+    background-color: transparent;
+    border: none; 
+    fill: var(--amarelo); 
+    margin: 80px; }
+
+.icones-footer
+{   width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin: 0 10%; }
+
