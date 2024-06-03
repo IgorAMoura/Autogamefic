@@ -327,18 +327,84 @@ h2
     padding-top: 30px; }
 
 .footer button
-{   height: 80px;
-    width: 80px;
+{   height: 30px;
+    width: 30px;
     background-color: transparent;
     border: none; 
     fill: var(--amarelo); 
-    margin: 80px; }
+    margin: 70px; }
+
+.footer button svg
+{   height: 50px;
+    width: 50px; }
 
 .icones-footer
 {   width: fit-content;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
+    flex-direction: row; 
     margin: 0 10%; }
 
+@media screen and (max-width: 1300px) {
+    header{position: relative;}
+    
+    .sobre p
+    {font-size: 18px;
+    line-height: 30px;}
+
+    .container-cards
+{   padding-top: 20px;}
+
+    .card
+{   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
+.card-img
+{   height: 340px;
+    width: 420px;
+    border-radius: 15px 15px 0 0;
+    background-color: var(--azul_escuro);
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.card-img img
+{   height: 320px;
+    border-radius: 15px 15px 0 0;}
+
+.faixa
+{   height: 180px;
+    width: 400px;
+    background-color: var(--azul);
+    padding: 20px;
+    box-shadow: inset 0px 15px 5px -5px rgba(0,0,0,0.75) }
+
+.faixa p
+{   font-family: "Roboto Mono";
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--preto); }
+
+.card-button
+{   height: 40px;
+    width: 420px;
+    border-radius: 0 0 15px 15px;
+    background-color: var(--azul_escuro);
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.card-button button
+{   height: 20px;
+    width: 20px;
+    fill: var(--amarelo);
+    background-color: transparent;
+    border: none; 
+    cursor: pointer;
+    transition: fill 200ms; }
+
+.card-button svg
+{   height: 20px;
+    width: 20px;}}
 
